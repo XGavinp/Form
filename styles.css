@@ -1,0 +1,74 @@
+body {
+  background-color: #309dcc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* To position the button */
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Align button to the center horizontally */
+}
+
+#submitButton:hover {
+  animation: shake 0.5s ease-in-out infinite; /* Random movement animation */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 5px);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  75% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(5px, 5px);
+  }
+}
+#submitButton {
+  width: 120px;
+  height: 40px;
+  transition: 0.3s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
